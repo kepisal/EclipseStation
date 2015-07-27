@@ -1,0 +1,13 @@
+<Context>
+<!-- this content.xml file is not working  -->
+<!-- the connection was established in ObjectDAO.java {static block} -->
+	<Resource name="mydatabase"
+		auth="Container"
+		type="javax.sql.DataSource"
+		maxActive="15"
+		maxIdle="20"
+		username="admin"
+		password="admin"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/ssdbmanage"/>
+</Context>

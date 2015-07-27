@@ -32,3 +32,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.zeroturnaround.eclipse.optimizer.plugin 1 0 2015-07-27 19:42:26.947
 !MESSAGE location of launcher INI: C:\Program Files (x86)\eclipse\eclipse.ini
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-07-27 20:34:15.011
+!MESSAGE Several ports (8005, 8080, 8009) required by Tomcat v7.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).

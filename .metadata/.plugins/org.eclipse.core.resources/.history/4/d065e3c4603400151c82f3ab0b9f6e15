@@ -1,0 +1,7 @@
+package com.testConnection;
+
+public class ConnectionTesting {
+	public static void main(String[] args) {
+		
+	}
+}

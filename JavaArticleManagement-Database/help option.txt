@@ -1,0 +1,22 @@
++========================================= <{ Help }> ======================================+
+
++---------------------+---------------------------------------+-----------------------------+
+|       Menu          |              Definition               |           Shortcut          |
++---------------------+---------------------------------------+-----------------------------+
+| 1.  F)  First       |    goto the first page.               |    (press F)                |
+| 2.  P)  Previous    |    goto the previous page.            |    (press P)                |
+| 3.  N)  Next        |    goto next page.                    |    (press N)                |
+| 4.  L)  Last        |    goto the last page.                |    (press L)                |
+| 5.  H)  Home        |    goto home page.                    |    (press H)                |
+| 6.  G)  Goto        |    goto spacific page.                |    (press G)                |
+| 7.  S)  Search      |    search article.                    |    (press S)                |
+| 8.  V)  View detail |    view detail article.               |    (press V)                |
+| 9.  A)  Add         |    add new article.                   |    (press A)                |
+| 10.  R)  Remove     |    remove article.                    |    (press R)                |
+| 11.  U)  Update     |    update article.                    |    (press U)                |
+| 12.  SS) Sort       |    sort article.                      |    (press SS)               |              |
+| 13.  #)  Set Row    |    set number row to display.         |    (press #)                |
+| 14.  HE) Help       |    view help command.                 |    (press HE)               |
+| 15.  AB) About Us   |    view credit and team member.       |    (press AB)               |
+| 16.  E)  Exit       |    exit application.                  |    (press E)                |
++---------------------+---------------------------------------+-----------------------------+
