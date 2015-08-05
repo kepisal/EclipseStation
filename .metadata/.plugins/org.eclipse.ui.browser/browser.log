@@ -1,0 +1,84 @@
+
+Jul 28, 2015 10:43:58.80 NEW SESSION
+Jul 28, 2015 10:43:58.80 1438055038798	FirefoxAccounts	ERROR	error POSTing /certificate/sign: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 465\"  data: no]","message":null,"code":null,"errno":null}
+Jul 28, 2015 10:43:58.80 1438055038798	FirefoxAccounts	ERROR	error POSTing /certificate/sign: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 465\"  data: no]","message":null,"code":null,"errno":null}
+Jul 28, 2015 10:43:58.82 1438055038798	FirefoxAccounts	ERROR	HAWK.signCertificate error: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 465\"  data: no]","message":null,"code":null,"errno":null}
+Jul 28, 2015 10:43:58.82 1438055038798	FirefoxAccounts	ERROR	HAWK.signCertificate error: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 465\"  data: no]","message":null,"code":null,"errno":null}
+Jul 28, 2015 10:43:58.83 1438055038799	Sync.BrowserIDManager	ERROR	Non-authentication error in _fetchTokenForUser: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 465\"  data: no]","message":null,"code":null,"errno":null}
+Jul 28, 2015 10:43:58.83 1438055038801	Sync.BrowserIDManager	ERROR	Background fetch for key bundle failed: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 465\"  data: no]","message":null,"code":null,"errno":null}
+Jul 28, 2015 10:43:58.83 1438055038801	Sync.BrowserIDManager	ERROR	Could not authenticate: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 465\"  data: no]","message":null,"code":null,"errno":null}
+
+Aug 01, 2015 11:15:41.61 NEW SESSION
+Aug 01, 2015 11:15:41.61 *************************
+Aug 01, 2015 11:15:41.64 A coding exception was thrown and uncaught in a Task.
+Aug 01, 2015 11:15:41.65 
+Aug 01, 2015 11:15:41.66 Full message: TypeError: Filter is null
+Aug 01, 2015 11:15:41.67 Full stack: INIParser.prototype.process@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/bootstrap.js -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/lib/filterStorage.js:789:9
+Aug 01, 2015 11:15:41.68 exports.IO.readFromFile/onProgress@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/bootstrap.js -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/lib/io.js:97:15
+Aug 01, 2015 11:15:41.68 exports.IO.readFromFile/<@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/bootstrap.js -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/lib/io.js:182:11
+Aug 01, 2015 11:15:41.69 TaskImpl_run@resource://gre/modules/Task.jsm:314:40
+Aug 01, 2015 11:15:41.70 Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:867:23
+Aug 01, 2015 11:15:41.70 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:746:7
+Aug 01, 2015 11:15:41.71 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:688:37
+Aug 01, 2015 11:15:41.72 
+Aug 01, 2015 11:15:41.73 *************************
+Aug 01, 2015 11:15:41.74 *************************
+Aug 01, 2015 11:15:41.75 A coding exception was thrown in a Promise rejection callback.
+Aug 01, 2015 11:15:41.75 See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+Aug 01, 2015 11:15:41.76 
+Aug 01, 2015 11:15:41.77 Full message: TypeError: Cu is null
+Aug 01, 2015 11:15:41.78 Full stack: exports.FilterStorage.loadFromDisk/readFile</<@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/bootstrap.js -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/lib/filterStorage.js:385:11
+Aug 01, 2015 11:15:41.78 exports.IO.readFromFile/onError@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/bootstrap.js -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/lib/io.js:149:9
+Aug 01, 2015 11:15:41.78 Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:870:21
+Aug 01, 2015 11:15:41.79 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:746:7
+Aug 01, 2015 11:15:41.79 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:688:37
+Aug 01, 2015 11:15:41.80 
+Aug 01, 2015 11:15:41.81 *************************
+Aug 01, 2015 11:18:04.63 *************************
+Aug 01, 2015 11:18:04.64 A coding exception was thrown and uncaught in a Task.
+Aug 01, 2015 11:18:04.64 
+Aug 01, 2015 11:18:04.65 Full message: TypeError: OS is null
+Aug 01, 2015 11:18:04.67 Full stack: exports.IO.writeToFile/<@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/bootstrap.js -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/lib/io.js:236:9
+Aug 01, 2015 11:18:04.67 TaskImpl_run@resource://gre/modules/Task.jsm:314:40
+Aug 01, 2015 11:18:04.68 Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:867:23
+Aug 01, 2015 11:18:04.69 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:746:7
+Aug 01, 2015 11:18:04.70 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:688:37
+Aug 01, 2015 11:18:04.71 Spinner.prototype.observe@resource://gre/modules/AsyncShutdown.jsm:464:9
+Aug 01, 2015 11:18:04.71 
+Aug 01, 2015 11:18:04.72 *************************
+Aug 01, 2015 11:18:04.72 *************************
+Aug 01, 2015 11:18:04.73 A coding exception was thrown in a Promise rejection callback.
+Aug 01, 2015 11:18:04.74 See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+Aug 01, 2015 11:18:04.74 
+Aug 01, 2015 11:18:04.75 Full message: TypeError: Cr is null
+Aug 01, 2015 11:18:04.75 Full stack: exports.ElemHide.apply/<@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/bootstrap.js -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/lib/elemHide.js:245:11
+Aug 01, 2015 11:18:04.76 Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:870:21
+Aug 01, 2015 11:18:04.76 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:746:7
+Aug 01, 2015 11:18:04.77 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:688:37
+Aug 01, 2015 11:18:04.77 Spinner.prototype.observe@resource://gre/modules/AsyncShutdown.jsm:464:9
+Aug 01, 2015 11:18:04.78 
+Aug 01, 2015 11:18:04.78 *************************
+Aug 01, 2015 11:18:37.36 *************************
+Aug 01, 2015 11:18:37.37 A coding exception was thrown and uncaught in a Task.
+Aug 01, 2015 11:18:37.37 
+Aug 01, 2015 11:18:37.38 Full message: TypeError: OS is null
+Aug 01, 2015 11:18:37.38 Full stack: exports.IO.writeToFile/<@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/bootstrap.js -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/lib/io.js:236:9
+Aug 01, 2015 11:18:37.39 TaskImpl_run@resource://gre/modules/Task.jsm:314:40
+Aug 01, 2015 11:18:37.39 Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:867:23
+Aug 01, 2015 11:18:37.40 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:746:7
+Aug 01, 2015 11:18:37.40 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:688:37
+Aug 01, 2015 11:18:37.41 Spinner.prototype.observe@resource://gre/modules/AsyncShutdown.jsm:464:9
+Aug 01, 2015 11:18:37.41 
+Aug 01, 2015 11:18:37.42 *************************
+Aug 01, 2015 11:18:37.42 *************************
+Aug 01, 2015 11:18:37.42 A coding exception was thrown in a Promise rejection callback.
+Aug 01, 2015 11:18:37.43 See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+Aug 01, 2015 11:18:37.43 
+Aug 01, 2015 11:18:37.44 Full message: TypeError: Cr is null
+Aug 01, 2015 11:18:37.45 Full stack: exports.ElemHide.apply/<@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/bootstrap.js -> jar:file:///C:/Users/Pisal/AppData/Roaming/Mozilla/Firefox/Profiles/4mm35r6c.default/extensions/%7Bd10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d%7D.xpi!/lib/elemHide.js:245:11
+Aug 01, 2015 11:18:37.45 Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:870:21
+Aug 01, 2015 11:18:37.45 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:746:7
+Aug 01, 2015 11:18:37.46 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:688:37
+Aug 01, 2015 11:18:37.46 Spinner.prototype.observe@resource://gre/modules/AsyncShutdown.jsm:464:9
+Aug 01, 2015 11:18:37.47 
+Aug 01, 2015 11:18:37.47 *************************

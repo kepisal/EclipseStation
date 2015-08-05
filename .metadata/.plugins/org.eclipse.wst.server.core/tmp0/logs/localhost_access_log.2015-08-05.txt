@@ -1,0 +1,14 @@
+127.0.0.1 - - [05/Aug/2015:17:06:52 +0700] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [05/Aug/2015:17:06:53 +0700] "GET /AjaxStaffandStudent/index.jsp HTTP/1.1" 200 3450
+0:0:0:0:0:0:0:1 - - [05/Aug/2015:17:06:54 +0700] "GET /AjaxStaffandStudent/bootstrap/css/bootstrap.css HTTP/1.1" 200 154230
+0:0:0:0:0:0:0:1 - - [05/Aug/2015:17:06:54 +0700] "GET /AjaxStaffandStudent/js/jquery-min.js HTTP/1.1" 200 95997
+0:0:0:0:0:0:0:1 - - [05/Aug/2015:17:06:54 +0700] "GET /AjaxStaffandStudent/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 36822
+0:0:0:0:0:0:0:1 - - [05/Aug/2015:17:06:54 +0700] "GET /AjaxStaffandStudent/bootstrap/js/bootstrap.js HTTP/1.1" 200 71253
+0:0:0:0:0:0:0:1 - - [05/Aug/2015:17:06:54 +0700] "GET /AjaxStaffandStudent/js/script.js HTTP/1.1" 200 7757
+0:0:0:0:0:0:0:1 - - [05/Aug/2015:17:06:55 +0700] "POST /AjaxStaffandStudent/classlist.hrd HTTP/1.1" 200 315
+0:0:0:0:0:0:0:1 - - [05/Aug/2015:17:06:55 +0700] "POST /AjaxStaffandStudent/universitylist.hrd HTTP/1.1" 200 322
+0:0:0:0:0:0:0:1 - - [05/Aug/2015:17:06:55 +0700] "POST /AjaxStaffandStudent/listobject.hrd HTTP/1.1" 200 629
+0:0:0:0:0:0:0:1 - - [05/Aug/2015:17:06:55 +0700] "POST /AjaxStaffandStudent/universitylist.hrd HTTP/1.1" 200 322
+0:0:0:0:0:0:0:1 - - [05/Aug/2015:17:06:55 +0700] "POST /AjaxStaffandStudent/classlist.hrd HTTP/1.1" 200 315
+0:0:0:0:0:0:0:1 - - [05/Aug/2015:17:06:56 +0700] "GET /AjaxStaffandStudent/img/0.png HTTP/1.1" 200 4994
+0:0:0:0:0:0:0:1 - - [05/Aug/2015:17:06:56 +0700] "GET /AjaxStaffandStudent/img/1.png HTTP/1.1" 200 4780

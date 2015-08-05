@@ -53,6 +53,7 @@ function lists() {
 	$.post("listobject.hrd", function(data) {
 		droplist();
 		$("#tblist").html(listobjectdetails(data));
+		
 	});
 
 }
@@ -60,14 +61,15 @@ function lists() {
  * create tag <tr><td> value </td></tr> follow data
  */
 function listobjectdetails(data) {
+	alert(data.myArrayList.length);
 	var str = "";
-	for (var i = 0; i < data.length; i++) {
+	for (var i = 0; i < data.myArrayList.length; i++) {
 
-		str += "<tr>" + "<td id=studid" + i + ">" + data[i].stuid + "</td>"
-				+ "<td>" + data[i].stuname + "</td>" + "<td>"
-				+ checkGender(data[i].gender) + "</td>" + "<td>"
-				+ data[i].unversity + "</td>" + "<td>" + data[i].classes
-				+ "</td>" + "<td>" + checkStatus(data[i].status, i) + "</td>"
+		str += "<tr>" + "<td id=studid" + i + ">" +data.myArrayList[i].map.stu_id + "</td>"
+				+ "<td>" + data.myArrayList[i].map.stu_name + "</td>" + "<td>"
+				+ checkGender(data.myArrayList[i].map.stu_gender) + "</td>" + "<td>"
+				+ data.myArrayList[i].map.stu_university + "</td>" + "<td>" + data.myArrayList[i].map.stu_class
+				+ "</td>" + "<td>" + checkStatus(data.myArrayList[i].map.stu_status, i) + "</td>"
 				+ "<td><button class=btnEdit" + i + " onclick=editFun(" + i
 				+ ")>Edit</button><button class=btnRemove" + i
 				+ " onclick=removeFun(" + i

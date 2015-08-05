@@ -15,11 +15,18 @@ import javax.sql.DataSource;
 public class ObjectDAO {
 	static Connection cn;
 
+	public ResultSet listrs() throws SQLException, ClassNotFoundException {
+
+		String sql = "select * from hrd_students";
+		java.sql.Statement stm = cn.createStatement();
+		ResultSet rs = stm.executeQuery(sql);
+		return rs;
+	}
+
 	/*
 	 * list all of elements in database return Arraylist objects
 	 */
-	public ArrayList<ObjectDTO> list() throws SQLException,
-			ClassNotFoundException {
+	public ArrayList<ObjectDTO> list() throws SQLException, ClassNotFoundException {
 
 		String sql = "select * from hrd_students";
 		java.sql.Statement stm = cn.createStatement();
@@ -27,19 +34,15 @@ public class ObjectDAO {
 		ArrayList<ObjectDTO> objectdto = new ArrayList<ObjectDTO>();
 		try {
 			while (rs.next()) {
-				objectdto.add(new ObjectDTO(rs.getString("stu_id"), rs
-						.getString("stu_name"), rs.getInt("stu_gender"), rs
-						.getString("stu_university"),
-						rs.getString("stu_class"), rs.getInt("stu_status")));
+				objectdto.add(new ObjectDTO(rs.getString("stu_id"), rs.getString("stu_name"), rs.getInt("stu_gender"),
+						rs.getString("stu_university"), rs.getString("stu_class"), rs.getInt("stu_status")));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			
-		}/*finally{
-			rs.close();
-			stm.close();
-			cn.close();
-		}*/
+
+		} /*
+			 * finally{ rs.close(); stm.close(); cn.close(); }
+			 */
 		return objectdto;
 	}
 
@@ -48,13 +51,12 @@ public class ObjectDAO {
 	 * return true/false for success or faild
 	 */
 	public boolean update(String id, int status) throws SQLException {
-		try (PreparedStatement pstm = cn
-				.prepareStatement("update hrd_students set stu_status=? where stu_id=?");) {
+		try (PreparedStatement pstm = cn.prepareStatement("update hrd_students set stu_status=? where stu_id=?");) {
 
 			pstm.setString(1, String.valueOf(status));
 			pstm.setString(2, id);
 			return pstm.execute();
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 			cn.close();
@@ -72,16 +74,13 @@ public class ObjectDAO {
 		ArrayList<ObjectDTO> objectdto = new ArrayList<ObjectDTO>();
 		try {
 			while (rs.next()) {
-				objectdto.add(new ObjectDTO("", "", 0, "", rs
-						.getString("stu_class"), 0));
+				objectdto.add(new ObjectDTO("", "", 0, "", rs.getString("stu_class"), 0));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-		}/*finally{
-			rs.close();
-			stm.close();
-			cn.close();
-		}*/
+		} /*
+			 * finally{ rs.close(); stm.close(); cn.close(); }
+			 */
 		return objectdto;
 	}
 
@@ -95,18 +94,15 @@ public class ObjectDAO {
 		ArrayList<ObjectDTO> objectdto = new ArrayList<ObjectDTO>();
 		try {
 			while (rs.next()) {
-				objectdto.add(new ObjectDTO("", "", 0, rs
-						.getString("stu_university"), "", 0));
+				objectdto.add(new ObjectDTO("", "", 0, rs.getString("stu_university"), "", 0));
 			}
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
-		
-		}/*finally{
-			rs.close();
-			stm.close();
-			cn.close();
-		}*/
+
+		} /*
+			 * finally{ rs.close(); stm.close(); cn.close(); }
+			 */
 		return objectdto;
 	}
 
@@ -114,10 +110,10 @@ public class ObjectDAO {
 	 * Search all of content by name, class, university and status return as
 	 * ArrayList objects
 	 */
-	public ArrayList<ObjectDTO> search(String name, String classes,
-			String university, String status) throws SQLException {
-		PreparedStatement ps = cn
-				.prepareStatement("select * from hrd_students where stu_university LIKE ? and stu_class LIKE ? and stu_status LIKE ? and stu_name like ?");
+	public ArrayList<ObjectDTO> search(String name, String classes, String university, String status)
+			throws SQLException {
+		PreparedStatement ps = cn.prepareStatement(
+				"select * from hrd_students where stu_university LIKE ? and stu_class LIKE ? and stu_status LIKE ? and stu_name like ?");
 		ps.setString(1, university + "%");
 		ps.setString(2, classes + "%");
 		ps.setString(3, status + "%");
@@ -125,21 +121,18 @@ public class ObjectDAO {
 		ResultSet rs = ps.executeQuery();
 		ArrayList<ObjectDTO> alist = new ArrayList<ObjectDTO>();
 		while (rs.next()) {
-			alist.add(new ObjectDTO(rs.getString("stu_id"), rs
-					.getString("stu_name"), rs.getInt("stu_gender"), rs
-					.getString("stu_university"), rs.getString("stu_class"), rs
-					.getInt("stu_status")));
+			alist.add(new ObjectDTO(rs.getString("stu_id"), rs.getString("stu_name"), rs.getInt("stu_gender"),
+					rs.getString("stu_university"), rs.getString("stu_class"), rs.getInt("stu_status")));
 		}
-		/*rs.close();
-		ps.close();
-		cn.close();*/
+		/*
+		 * rs.close(); ps.close(); cn.close();
+		 */
 		return alist;
 	}
+
 	/*
-	 * @param : id searching
-	 * return only one ObjectDTO
-	 * View Object Details
-	 * */
+	 * @param : id searching return only one ObjectDTO View Object Details
+	 */
 	public ObjectDTO viewObject(String id) throws SQLException {
 		String sql = "select * from hrd_students where stu_id=?";
 		PreparedStatement pstm = cn.prepareStatement(sql);
@@ -148,41 +141,33 @@ public class ObjectDAO {
 		ObjectDTO objectdto = new ObjectDTO();
 		try {
 			if (rs.next()) {
-				objectdto = new ObjectDTO(rs.getString("stu_id"),
-						rs.getString("stu_name"), rs.getInt("stu_gender"),
-						rs.getString("stu_university"),
-						rs.getString("stu_class"), rs.getInt("stu_status"));
+				objectdto = new ObjectDTO(rs.getString("stu_id"), rs.getString("stu_name"), rs.getInt("stu_gender"),
+						rs.getString("stu_university"), rs.getString("stu_class"), rs.getInt("stu_status"));
 			}
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
-		}/*finally{
-			rs.close();
-			pstm.close();
-			cn.close();
-		}*/
+		} /*
+			 * finally{ rs.close(); pstm.close(); cn.close(); }
+			 */
 		return objectdto;
 	}
 
 	/*
-	 * @param : id searching
-	 * return boolean
-	 * true : success deleted
-	 * false : fail deleted
-	 * */
+	 * @param : id searching return boolean true : success deleted false : fail
+	 * deleted
+	 */
 	public boolean DeleteObject(String id) throws SQLException {
 		String sql = "delete from hrd_students where stu_id=?";
 		PreparedStatement pstm = cn.prepareStatement(sql);
 		pstm.setString(1, id);
 		return pstm.execute();
 	}
+
 	/*
-	 * @param : Object
-	 * return boolean
-	 * 2 purpose : Add new and Edited
-	 * if Id existed : Update Record
-	 * if Id not existed : Add new Record
-	 * */
+	 * @param : Object return boolean 2 purpose : Add new and Edited if Id
+	 * existed : Update Record if Id not existed : Add new Record
+	 */
 	public boolean add(ObjectDTO objectDTO) throws SQLException {
 		boolean idexist = false;
 		String sqlid = "select stu_id from hrd_students";
@@ -191,8 +176,8 @@ public class ObjectDAO {
 		ResultSet rs = stm.executeQuery(sqlid);
 		while (rs.next()) {
 			if (rs.getString(1).equals(objectDTO.getStuid())) {
-				pstm = cn
-						.prepareStatement("update hrd_students set stu_name=?, stu_gender=?, stu_university=?,stu_class=?,stu_status=? where stu_id=?");
+				pstm = cn.prepareStatement(
+						"update hrd_students set stu_name=?, stu_gender=?, stu_university=?,stu_class=?,stu_status=? where stu_id=?");
 
 				pstm.setString(1, objectDTO.getStuname());
 				pstm.setInt(2, objectDTO.getGender());
@@ -217,12 +202,13 @@ public class ObjectDAO {
 
 	}
 
-	/********************** Here is Connection Database *********************************/
+	/**********************
+	 * Here is Connection Database
+	 *********************************/
 	static {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			cn = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/dbhrdstudents", "root", "");
+			cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbhrdstudents", "root", "");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

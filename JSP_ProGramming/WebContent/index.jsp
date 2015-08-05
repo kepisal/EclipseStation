@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Home</h1>
+<form action="datastore" method="post">
+
+<input type="submit" value="submit">
+</form>
 </body>
 </html>

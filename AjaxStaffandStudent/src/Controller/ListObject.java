@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.jasper.tagplugins.jstl.core.Out;
+
 import com.google.gson.Gson;
 
 import Controller.Action;
@@ -19,15 +21,14 @@ public class ListObject implements Action {
 			HttpServletResponse response) throws Exception {
 		
 		ObjectDAO dao = new ObjectDAO();
-		ArrayList<ObjectDTO> objectlist = dao.list();
+		//ArrayList<ObjectDTO> objectlist = dao.list();
 		
 		response.setContentType("application/json");
 		response.setCharacterEncoding("UTF-8");
-		String obj= new Gson().toJson(objectlist);
+		String obj= new Gson().toJson(new Convertor().convertResultSetIntoJSON(new ObjectDAO().listrs()));
 		
 		response.getWriter().write(obj);
-	
-		
+		System.out.println(obj);
 		return null;
 	}
 
